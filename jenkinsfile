@@ -4,18 +4,18 @@ pipeline {
     stages {
         stage('Step One') {
             steps {
-               bat 'dir c:\\windows > hasil.txt'
+               bat 'dir c:\\windows > g:\\training\\hasil.txt'
             }
         }
         stage('Step Two') {
             steps {
-               bat 'copy hasil.txt c:\\latihan'
+               bat 'copy hasil.txt g:\\training\\sample\\latihan'
             }
         }
         stage('Step Three') {
             steps {
-               bat 'del c:\\latihan\\result.txt'
-               bat 'cd c:\\latihan'
+               bat 'del g:\\training\\hasil.txt'
+               bat 'cd g:\\training\\sample'
                bat 'ren hasil.txt result.txt'
             }
         }

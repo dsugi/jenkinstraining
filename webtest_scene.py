@@ -7,7 +7,7 @@ def init_driver():
 
 def test_form_entry():
     driver.get("http://localhost/form.php")
-    driver.find_element_by_name("nip").send_keys("40002030")
+    driver.find_element_by_name("nip").send_keys("4000203011")
     driver.find_element_by_name("nama").send_keys("dontbe")
     driver.find_element_by_name("nik").send_keys("03020004")
     driver.find_element_by_name("alamat").send_keys("Indonesia")

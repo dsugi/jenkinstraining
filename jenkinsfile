@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Step Two') {
             steps {
-               bat 'copy hasil.txt g:\\training\\sample'
+               bat 'copy hasil.txt g:\\training\\sample\\'
             }
         }
         stage('Step Three') {
